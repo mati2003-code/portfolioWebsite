@@ -1,0 +1,12 @@
+@use '../01-settings/' as*;
+
+.list {
+  font-size: 2rem;
+  font-style: italic;
+  list-style: square;
+  color: $color-white;
+
+  &--margin-top {
+    margin-top: $gutter;
+  }
+}

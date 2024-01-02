@@ -1,0 +1,17 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.fa-solid {
+  display: block;
+  position: absolute;
+  color: $color-white;
+  left: 20px;
+  top: 20px;
+  font-size: 2.5rem;
+  z-index: 2;
+  cursor: pointer;
+
+  @include medium {
+    display: none;
+  }
+}

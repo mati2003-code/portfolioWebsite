@@ -1,0 +1,12 @@
+@use '../01-settings/' as *;
+
+.text-color-white {
+  color: $color-white;
+}
+.text-color-green {
+  color: green;
+}
+
+.text-color-red {
+  color: rgb(248, 50, 50);
+}

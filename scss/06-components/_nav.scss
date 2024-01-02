@@ -1,0 +1,29 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+
+.nav {
+  background-color: rgba(0, 0, 0, .2);
+
+  &__item {
+    font-size: 2rem;
+    font-style: italic;
+    display: none;
+    
+    @include medium {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    display: flex;
+    color: $color-white;
+    padding: $grid-base;
+    border-radius: .4rem;
+    transition-duration: 0.5s;
+
+    &:hover {
+      background-color: $color-red;
+    }
+  }
+}

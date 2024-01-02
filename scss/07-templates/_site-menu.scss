@@ -1,0 +1,24 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: #c0bdbdc4;
+
+  @include medium {
+    display: none;
+  }
+
+  &__element {
+    border-bottom: 1px solid $color-white;
+    
+  }
+
+  &__writing {
+    width: 100%;
+    text-align: center;
+  }
+}

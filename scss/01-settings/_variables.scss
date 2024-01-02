@@ -1,0 +1,15 @@
+$color-white: #eff0f3;
+$color-red: #74030e;
+$color-green: #132601; 
+$color-bg-section: linear-gradient(90deg, rgba(126,128,125,1) 0%, rgba(106,60,102,1) 53%);
+$color-bg-footer: linear-gradient(90deg, rgba(67,70,65,1) 0%, rgba(50,91,99,1) 53%);
+
+$font-base: 10px;
+
+$grid-base: $font-base;
+
+$gutter: 1.5 * $grid-base;
+
+$bp-md: 768px;
+
+$bp-lg: 1240px;
