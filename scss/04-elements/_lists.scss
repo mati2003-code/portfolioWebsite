@@ -2,11 +2,24 @@
 
 .list {
   font-size: 2rem;
-  font-style: italic;
-  list-style: square;
+  list-style: none;
   color: $color-white;
 
-  &--margin-top {
-    margin-top: $gutter;
+
+  &--element {
+    display: flex;
+    align-items: center;
+    margin-top: $gutter * 1.5;
+    letter-spacing: 2px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      margin-right: 10px;
+      transform: rotate(45deg);
+      background-color: $color-blue;
+    }
   }
 }

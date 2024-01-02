@@ -18,9 +18,14 @@
   }
   
   &--h2 {
-    font-size: 5rem;
-    font-style: italic;
+    color: $color-white;
+    font-size: 4rem;
     width: 100%;
     text-align: center;
+    letter-spacing: 2px;
+
+    &::first-letter {
+      color: $color-blue;
+    }
   }
 }
