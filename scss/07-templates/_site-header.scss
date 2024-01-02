@@ -1,7 +1,8 @@
 @use '../01-settings/' as *;
+@use '../02-tools/' as *;
 
 .site-header {
-  background: url(../assets/img/bg-header.webp) center/cover fixed;
+  background: rgb(18, 18, 18);
   height: 100vh;
   position: relative;
 
@@ -9,20 +10,59 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    z-index: 0;
   }
   
   &__nav {
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    width: 100%;
+    right: 0;
+    width: 70%;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 12px;
   }
 
   &__h1 {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     text-align: center;
     width: 100%;
+    @include medium {
+      width: 50%;
+      bottom: 40%;
+    }
+
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+
+    @include medium {
+      position: absolute;
+      right: 0;
+      top: 10%;
+      height: 70rem;
+      width: 50rem;
+    }
+  }
+
+  &__hamburger-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    @include medium {
+      display: none;
+    }
   }
 
   &__button {

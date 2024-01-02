@@ -1,0 +1,6 @@
+@use '../01-settings/' as *;
+
+::selection {
+  color: $color-white;
+  background-color: $color-blue;
+}

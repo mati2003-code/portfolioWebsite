@@ -5,14 +5,15 @@
 
   &--h1 {
     color: $color-white;
-    font-size: 6rem;
-    font-style: italic;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    z-index: 1;
 
     @include medium {
-      font-size: 8rem;
+      font-size: 4rem;
     }
     @include large {
-      font-size: 10rem;
+      font-size: 5rem;
     }
   }
   

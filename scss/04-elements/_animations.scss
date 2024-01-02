@@ -24,3 +24,18 @@
     opacity: 0;
   }
 }
+
+@keyframes logo-typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes borderCursor {
+  to {
+    border-right: 0;
+  }
+}

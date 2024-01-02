@@ -12,70 +12,11 @@
   }
 
   &__image {
-    background: url(../assets/img/menu-2.jpg) center/cover;
     height: 22rem;
     display: block;
     border-top-left-radius: .6rem;
     border-top-right-radius: .6rem;
 
-    &--2nd {
-      background: url(../assets/img/menu-3.jpg) center/cover;
-    }
-
-    &--3rd {
-      background: url(../assets/img/menu-4.jpg) center/cover;
-    }
-    &--4th {
-      background: url(../assets/img/menu-5.jpg) center/cover;
-    }
-    &--5th {
-      background: url(../assets/img/menu-6.webp) center/cover;
-    }
-    &--6th {
-      background: url(../assets/img/menu-7.jpg) center/cover;
-    }
-    &--7th {
-      background: url(../assets/img/menu-8.jpg) center/cover;
-    }
-
-    &--dancehole-1 {
-      background: url(../assets/img/dancehole-1.jpg) center/cover;
-    }
-    &--dancehole-2 {
-      background: url(../assets/img/dancehole-2.jpg) center/cover;
-    }
-    &--dancehole-3 {
-      background: url(../assets/img/dancehole-3.jpg) center/cover;
-    }
-    &--dancehole-4 {
-      background: url(../assets/img/dancehole-4.jpg) center/cover;
-    }
-
-    &--restaurant-1 {
-      background: url(../assets/img/restaurant-1.jpg) center/cover;
-    }
-    &--restaurant-2 {
-      background: url(../assets/img/restaurant-2.webp) center/cover;
-    }
-    &--restaurant-3 {
-      background: url(../assets/img/restaurant-3.webp) center/cover;
-    }
-    &--restaurant-4 {
-      background: url(../assets/img/restaurant-4.webp) center/cover;
-    }
-
-    &--room-1 {
-      background: url(../assets/img/room-1.webp) center/cover;
-    }
-    &--room-2 {
-      background: url(../assets/img/room-2.webp) center/cover;
-    }
-    &--room-3 {
-      background: url(../assets/img/room-3.webp) center/cover;
-    }
-    &--room-4 {
-      background: url(../assets/img/room-4.webp) center/cover;
-    }
 
     @include medium {
       height: 16rem;
