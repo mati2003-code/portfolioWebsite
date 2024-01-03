@@ -249,9 +249,9 @@ p {
 .hamburger-menu {
   display: block;
   position: absolute;
-  right: 20px;
-  top: 10px;
-  width: 40px;
+  right: 8px;
+  top: 8px;
+  width: 35px;
   z-index: 3;
 }
 @media screen and (min-width: 768px) {
@@ -529,7 +529,7 @@ p {
   justify-content: space-evenly;
   position: absolute;
   right: 0;
-  width: 70%;
+  width: 72%;
 }
 .site-header__logo {
   position: absolute;

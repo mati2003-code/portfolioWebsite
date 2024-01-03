@@ -11,14 +11,12 @@
   transform: rotate(45deg) translateY(-8px);
 }
 
-
-
 .hamburger-menu {
   display: block;
   position: absolute;
-  right: 20px;
-  top: 10px;
-  width: 40px;
+  right: 8px;
+  top: 8px;
+  width: 35px;
   z-index: 3;
 
   @include medium {

@@ -8,6 +8,11 @@ const siteMenu = document.querySelector('.site-menu');
 const h1 = document.querySelector('.heading--h1');
 const readMoreButton = document.querySelector('.btn--readmore');
 const spanElement = document.querySelector('.site-section--span');
+const logo = document.querySelector('.logo');
+
+logo.addEventListener('click', () => {
+  location.reload();
+});
 
 readMoreButton.addEventListener('click', () => {
   spanElement.classList.add('animation-appear');  
