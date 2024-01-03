@@ -471,9 +471,8 @@ p {
   margin-bottom: 20px;
   color: #eff0f3;
   background-color: transparent;
-  border: none;
+  border: 1px solid #eff0f3;
   border-radius: 0.4rem;
-  box-shadow: 0px 0px 5px 0px #eff0f3;
   font-size: 1.5rem;
   outline: none;
   transition-duration: 0.5s;
@@ -488,7 +487,7 @@ p {
 @media screen and (min-width: 768px) {
   .form__input--submit:hover, .form__textarea--submit:hover {
     background-color: rgba(27, 27, 27, 0.4);
-    box-shadow: 0px 0px 15px 0px #eff0f3;
+    box-shadow: 0px 0px 5px 0px #eff0f3;
   }
 }
 .form__textarea {
@@ -602,7 +601,7 @@ p {
   min-height: 70vh;
 }
 .site-section--contact {
-  background: url(../../assets/img/pexels-olia-danilevich-4974920.jpg) center/cover;
+  background: url(../assets/img/pexels-olia-danilevich-4974920.jpg) center/cover;
 }
 @media screen and (min-width: 1240px) {
   .site-section--contact {
