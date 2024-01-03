@@ -39,4 +39,17 @@
     margin-top: 20px;
   }
 
+  &--download {
+    max-width: 200px;
+    background-color: rgb(190, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--contacts {
+    max-width: 200px;
+    padding: 15px;
+    border: 1px solid white;
+  }
+
 }

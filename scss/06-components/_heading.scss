@@ -32,9 +32,9 @@
   }
   
   &--h3 {
+    position: relative;
     margin: 20px auto ;
     color: $color-white;
-    box-shadow: 0px 0px 5px 0px $color-white;
     padding: 10px;
     font-size: 3rem;
     text-align: center;
