@@ -2,8 +2,9 @@
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.6 * $font-base;
+  font-size: 2 * $font-base;
   line-height: 2.8rem;
+  letter-spacing: 1px;
   padding: $grid-base;
   margin-top: $grid-base * 1.5;
   color: $color-white;

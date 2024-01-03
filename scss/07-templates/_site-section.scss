@@ -1,11 +1,40 @@
 @use '../01-settings/' as *;
+@use '../02-tools/' as *;
 
 .site-section {
+  position: relative;
   min-height: 70vh;
   padding-top: $grid-base * 3;
+  border-bottom: 1px solid $color-white;
+
+  &__blackout {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  &--img {
+    height: 50rem;
+    border-radius: 10px;
+  }
+
+  &--span {
+    opacity: 0;
+    transition-duration: .5s;
+  }
 
   &--bg-color {
     background: black;
-    min-height: 40vh;
+    min-height: 70vh;
   } 
+
+  &--contact {
+    background: url(../../assets/img/pexels-olia-danilevich-4974920.jpg) center/cover;
+
+    @include large {
+      background-attachment: fixed;
+    }
+  }
 }

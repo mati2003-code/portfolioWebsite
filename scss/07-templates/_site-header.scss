@@ -5,6 +5,7 @@
   background: rgb(18, 18, 18);
   height: 100vh;
   position: relative;
+  border-bottom: 1px solid $color-white;
 
   &__blackout {
     position: absolute;

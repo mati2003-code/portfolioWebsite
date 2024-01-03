@@ -15,14 +15,17 @@
 <body>
     <div class="site-menu">
         <div class="row">
-            <div class="column site-menu__element" id="start">
+            <!-- <div class="column site-menu__element" id="start">
                <a href="#start"><p class="site-menu__writing">Start</p></a>
+            </div> -->
+            <div class="column site-menu__element">
+               <a href="#aboutme"><p class="site-menu__writing">About me</p></a>
             </div>
             <div class="column site-menu__element">
-               <a href="#aboutus"><p class="site-menu__writing">About me</p></a>
+               <a href="#technologies"><p class="site-menu__writing">Technologies</p></a>
             </div>
             <div class="column site-menu__element">
-               <a href="#restaurant"><p class="site-menu__writing">Technologies</p></a>
+               <a href="#restaurant"><p class="site-menu__writing">Education</p></a>
             </div>
             <div class="column site-menu__element">
                <a href="#menu"><p class="site-menu__writing">Projects</p></a>
@@ -30,22 +33,25 @@
         </div>
     </div>
     <div class="hamburger-menu">
-        <div class="hamburger-menu__element"></div>
-        <div class="hamburger-menu__element"></div>
-        <div class="hamburger-menu__element"></div>
+        <div class="hamburger-menu__element hamburger-menu__element--1"></div>
+        <div class="hamburger-menu__element hamburger-menu__element--2"></div>
+        <div class="hamburger-menu__element hamburger-menu__element--3"></div>
     </div>
     <header class="site-header">
         <div class="site-header__blackout blackout"></div>
         <nav>
             <ul class="site-header__nav nav">
-                <li class="nav__item">
+                <!-- <li class="nav__item">
                     <a class="nav__link" href="#start">Start</a>
+                </li> -->
+                <li class="nav__item">
+                    <a class="nav__link" href="#aboutme">About me</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#aboutus">About me</a>
+                    <a class="nav__link" href="#technologies">Technologies</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#menu">Technologies</a>
+                    <a class="nav__link" href="#menu">Education</a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="#dancehole">Projects</a>
@@ -58,57 +64,61 @@
         <img class="site-header__img image-box__image" src="assets/img/pexels-pavel-danilyuk-5496467.jpg" alt="Author's photo">
     </header>
     <main>
-        <section class="site-section site-section--bg-color" id="aboutus">
+        <section class="site-section site-section--bg-color" id="aboutme">
             <h2 class="heading--h2">About me</h2>
             <div class="container">
                 <div class="row">
-                    <p class="column column--md50 text-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt numquam aliquam quae sunt beatae, rerum itaque? Necessitatibus neque earum porro ratione illo aut eveniet quibusdam, quae, alias officia praesentium veritatis. Reprehenderit laudantium impedit necessitatibus excepturi et perspiciatis consequuntur a quaerat cumque, ab doloremque sunt cupiditate quisquam doloribus sapiente incidunt quod esse debitis.
-                    </p>
-                    <p class="column column--md50 text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quos itaque. Quasi, dolorem ratione consectetur excepturi corrupti officiis reprehenderit eligendi velit architecto quia eum, dolorum blanditiis nemo beatae! Error voluptatum nulla distinctio impedit quod provident ducimus cupiditate natus sed architecto animi harum praesentium, sit ex maxime a vitae. Praesentium deleniti ducimus libero nam! Harum voluptatibus ullam asperiores debitis.
+                    <img class="column column--sm50 text site-section--img" src="./assets/img/pexels-pavel-danilyuk-5496467.jpg"></img>
+                    <p class="column column--sm50">My name is Mateusz. I am a full-stack developer with one year of experience in programming in technologies that you can easily find below. Programming became my passion since I figured out how enjoyable it is.
+                    <span class="site-section--span display-none">
+                        Actually, I started learning programming about one year ago from HTML and CSS, which helped me really quickly jump into studying JavaScript. Being completely honest, it was so difficult at the beginning, but with the time it was getting easier and easier. Finally I fell in love with programming and started creating simple websites for small companies.
+                    </span>    
+                    <button class="btn--readmore btn">Read more</button>
                     </p>
                 </div>
             </div>
             
         </section>
-        <section class="site-section site-section--bg-color" id="restaurant">
+        <section class="site-section site-section--bg-color" id="technologies">
             <h2 class="heading--h2 text-color-white">Technologies</h2>
             <div class="container">
                 <div class="row">
-                    <ul class="column column--md33 column--lg33 list text-color-white">
-                        <li class="list--element">CSS3</li>
+                    <ul class="column column--sm33 column--lg33 list text-color-white">
+                        <li class="list--element">CSS3 (BEM) (ITCSS)</li>
                         <li class="list--element">Sass (SCSS)</li>
-                        <li class="list--element">BEM</li>
-                        <li class="list--element">ITCSS</li>
+                        <li class="list--element">GIT</li>
+                        <li class="list--element">GitHub</li>
                     </ul>
-                    <ul class="column column--md33 column--lg33 list  text-color-white">
+                    <ul class="column column--sm33 column--lg33 list  text-color-white">
                         <li class="list--element">HTML5</li>
-                        <li class="list--element">JavaScript</li>
+                        <li class="list--element">SEO/SEM</li>
+                        <li class="list--element">RWD</li>
+                        <li class="list--element">JavaScript (ES6)</li>
                         <li class="list--element">TypeScript</li>
                     </ul>
-                    <ul class="column column--md33 column--lg33 list text-color-white">
+                    <ul class="column column--sm33 column--lg33 list text-color-white">
                         <li class="list--element">React</li>
                         <li class="list--element">Angular</li>
                         <li class="list--element">JQuery</li>
                     </ul>
                 </div>
                 <div class="row">
-                    <div class="column column--md50 column--lg25">
+                    <div class="column column--sm50 column--lg25">
                         <div class="image-box">
                             <img class="image-box__image" src="./assets/img/html5-logo-for-web-development.webp"></img>
                         </div>
                     </div>
-                    <div class="column column--md50 column--lg25">
+                    <div class="column column--sm50 column--lg25">
                         <div class="image-box">
                             <img class="image-box__image" src="./assets/img/css.jpg"></img>
                         </div>
                     </div>
-                    <div class="column column--md50 column--lg25">
+                    <div class="column column--sm50 column--lg25">
                         <div class="image-box">
                             <img class="image-box__image" src="./assets/img/javascript-logo.webp"></img>
                         </div>
                     </div>
-                    <div class="column column--md50 column--lg25">
+                    <div class="column column--sm50 column--lg25">
                         <div class="image-box">
                             <img class="image-box__image" src="./assets/img/4844577.png"></img>
                         </div>
@@ -117,57 +127,66 @@
             </div>
         </section>
         <section class="site-section site-section--bg-color" id="menu">
-            <h2 class="heading--h2">Projects</h2>
+            <h2 class="heading--h2">Education</h2>
             <div class="container">
                 <div class="row">
-                    <div class="column column--md50 column--lg25">
-                        <div class="image-box">
-                            <div class="image-box__image"></div>
-                            <div class="image-box__text">Rosół z makaronem - <span class="text-color-green">10zł</span></div>
-                        </div>
+                    <div class="column column--md33">
+                        <h3 class="heading--h3">School</h3>
+                        <ul class="list">
+                            <li class="list--element"><a href="https://www.21los.tarnow.pl/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    XXI Liceum Ogólnokształcące w Tarnowie
+                            </a></li>
+                        </ul>
                     </div>
-                    <div class="column column--md50 column--lg25">
-                        <div class="image-box">
-                            <div class="image-box__image image-box__image--2nd"></div>
-                            <div class="image-box__text">Rosół z kołdunami - <span class="text-color-green">12zł</span></div>
-                        </div>
+                    <div class="column column--md33">
+                        <h3 class="heading--h3">Courses</h3>
+                        <ul class="list">
+                            <li class="list--element">
+                                Front-End Development (160h with mentor)
+                            </li>
+                            <li class="list--element">
+                                Back-End Development (160h with mentor)
+                            </li>
+                            <li class="list--element">
+                                The Complete Sass & SCSS Course: From Beginner to Advanced (+4h)
+                            </li>
+                            <li class="list--element">
+                                [2023] Programming in JavaScript from Zero to Master (+50h)
+                            </li>
+                        </ul>
                     </div>
-                    <div class="column column--md50 column--lg25">
-                        <div class="image-box">
-                            <div class="image-box__image image-box__image--3rd"></div>
-                            <div class="image-box__text">Barszcz czerwony z uszkami mięsnymi - <span class="text-color-green">12zł</span></div>
-                        </div>
+                    <div class="column column--md33">
+                        <h3 class="heading--h3">Languages</h3>
+                        <ul class="list">
+                            <li class="list--element">
+                                Polish (Native)
+                            </li>
+                            <li class="list--element">
+                                English (B2 FCE)
+                            </li>
+                            <li class="list--element">
+                                German (A1)
+                            </li>
+                        </ul>
                     </div>
-                    <div class="column column--md50 column--lg25">
-                        <div class="image-box">
-                            <div class="image-box__image image-box__image--4th"></div>
-                            <div class="image-box__text">Żurek z kiełbasą i jajkiem - <span class="text-color-green">13zł</span></div>
-                        </div>
-                    </div>
-                    <div class="column column--md50 column--lg25">
-                        <div class="image-box">
-                            <div class="image-box__image image-box__image--5th"></div>
-                            <div class="image-box__text">Krem chrzanowy z opiekaną kiełbasą, ziemniaczanym puree i jajkiem  - <span class="text-color-green">13zł</span></div>
-                        </div>
-                    </div>
-                    <div class="column column--md50 column--lg25">
-                        <div class="image-box">
-                            <div class="image-box__image image-box__image--6th"></div>
-                            <div class="image-box__text">Barszcz czerwony z uszkami mięsnymi - <span class="text-color-green">12zł</span></div>
-                        </div>
-                    </div>
-                    <div class="column column--md50 column--lg25">
-                        <div class="image-box">
-                            <div class="image-box__image image-box__image--7th"></div>
-                            <div class="image-box__text">Barszcz czerwony z uszkami mięsnymi - <span class="text-color-green">12zł</span></div>
-                        </div>
-                    </div>
-                    <div class="column column--md50 column--lg25">
-                        <div class="image-box">
-                            <div class="image-box__image image-box__image--8th"></div>
-                            <div class="image-box__text">Barszcz czerwony z uszkami mięsnymi - <span class="text-color-green">12zł</span></div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="site-section site-section--contact blackout" id="menu">
+            <div class="site-section__blackout blackout"></div>
+            <h2 class="heading--h2">Contact</h2>
+            <div class="container">
+                <div class="row">
+                    <form class="column form">
+                        <label class="form__label" for="email">Twój email:</label>
+                        <input class="form__input" id="topic">
+                        <label class="form__label" for="topic">Temat wiadomości:</label>
+                        <input class="form__input">
+                        <label class="form__label" for="message">Temat wiadomości:</label>
+                        <textarea class="form__textarea" id="message"></textarea>
+                        <input class="form__input form__input--submit" type="submit">
+                    </form>
                 </div>
             </div>
         </section>
@@ -176,20 +195,13 @@
         <div class="container">
             <div class="row">
                 <p class="column column--md33">
-                    Specjalizujemy się w organizacji imprez okolicznościowych do 350 osób. Sala konsumpcyjno -taneczna to powierzchnia około 550 m2z podziałem na część taneczną (parkiet), otoczoną kasetonami świetlnymi oraz część konsumpcyjną.
+                    
                 </p>
                 <p class="column column--md33">
-                    Sala restauracyjna obfituje w miłe
-                    i ciepłe kolory, które
-                    w połączeniu
-                    z zielenią kwiatów
-                    wyzwalają u każdego
-                    miły i radosny nastrój.
-                    Bar z szerokim
-                    asortymentem napojów i alkoholi.
+                   
                 </p>
                 <p class="column column--md33">
-                    Dysponujemy komfortowymi pokojami 2-, 3- i 4-osobowymi. Każdy pokój wyposażony jest w łazienkę z kabiną prysznicową. Wszystkim naszym Gościom zapewniamy miłą oraz profesjonalną obsługę.
+                   
                 </p>
             </div>
         </div>
