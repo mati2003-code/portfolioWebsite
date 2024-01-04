@@ -15,6 +15,11 @@ const inputEmail = document.querySelector('#email');
 const inputSubject = document.querySelector('#subject');
 const inputContent = document.querySelector('#content');
 
+window.addEventListener('DOMContentLoaded', () => {
+  window.scrollTo(0, 0);
+  h1.classList.add('animation-appear');
+});
+
 inputSubmit.addEventListener('click', (e) => {
   e.preventDefault();
   if( inputEmail.value === ''
@@ -49,10 +54,6 @@ hamburgerButton.addEventListener('click', () => {
   siteMenu.classList.toggle('transform');
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  window.scrollTo(0, 0);
-  h1.classList.add('animation-appear');
-});
 
 
 
