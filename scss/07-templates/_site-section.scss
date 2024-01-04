@@ -18,6 +18,7 @@
   &--img {
     height: 50rem;
     border-radius: 10px;
+    transform: rotateY(180deg);
   }
 
   &--span {
@@ -31,7 +32,7 @@
   } 
 
   &--contact {
-    background: url(../assets/img/pexels-olia-danilevich-4974920.jpg) center/cover;
+    background: url(../assets/img/pexels-tima-miroshnichenko-5380792.jpg) center/cover;
 
     @include large {
       background-attachment: fixed;

@@ -11,14 +11,25 @@ const spanElement = document.querySelector('.site-section--span');
 const logo = document.querySelector('.logo');
 const inputSubmit = document.querySelector('.form__input--submit');
 const msgSent = document.querySelector('.msg-sent');
-
+const inputEmail = document.querySelector('#email');
+const inputSubject = document.querySelector('#subject');
+const inputContent = document.querySelector('#content');
 
 inputSubmit.addEventListener('click', (e) => {
   e.preventDefault();
+  if( inputEmail.value === ''
+    || inputSubject.value === ''
+    || inputContent.value === '') {
+    msgSent.classList.add('color-red');  
+    msgSent.innerHTML = 'Field cannot be empty';
+  } else {
+    msgSent.classList.remove('color-red');  
+    msgSent.classList.add('color-green');  
     msgSent.innerHTML = 'Message sent successfully';
-  setTimeout(() => {
-    msgSent.innerHTML = '';
-  }, 5000);
+    setTimeout(() => {
+      msgSent.innerHTML = '';
+    }, 5000);
+  }
 });
 
 logo.addEventListener('click', () => {
