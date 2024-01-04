@@ -9,6 +9,17 @@ const h1 = document.querySelector('.heading--h1');
 const readMoreButton = document.querySelector('.btn--readmore');
 const spanElement = document.querySelector('.site-section--span');
 const logo = document.querySelector('.logo');
+const inputSubmit = document.querySelector('.form__input--submit');
+const msgSent = document.querySelector('.msg-sent');
+
+
+inputSubmit.addEventListener('click', (e) => {
+  e.preventDefault();
+    msgSent.innerHTML = 'Message sent successfully';
+  setTimeout(() => {
+    msgSent.innerHTML = '';
+  }, 5000);
+});
 
 logo.addEventListener('click', () => {
   location.reload();

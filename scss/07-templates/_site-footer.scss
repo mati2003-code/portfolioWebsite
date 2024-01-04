@@ -1,4 +1,5 @@
 @use '../01-settings/' as *;
+@use '../02-tools/' as *;
 
 .site-footer {
   position: relative;
@@ -6,16 +7,68 @@
   color: $color-white;
 
   &__brands {
-    display: flex;
-    flex-direction: column;
 
     &--el {
       display: flex;
       align-items: center;
       margin-bottom: 20px;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       letter-spacing: 1px;
+      text-wrap: wrap;
+      transition: .2s ease;
+
+      @include small {
+        font-size: 1.6rem;
+      }
+
+      @include medium {
+        font-size: 1.8rem;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
     }
   }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 20px $color-white;
+
+
+    @include medium {
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 30%;
+        transform: scale(0);
+        height: 0.5rem;
+        background-color: $color-blue;
+        transition: .5s;
+      }
+      &:hover {
+        color: $color-blue;
+        &::after {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  &--copyright, &--design {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: -20px;
+  }
+
+
 
 }

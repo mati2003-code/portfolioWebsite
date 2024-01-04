@@ -44,4 +44,10 @@
     margin-bottom: 10px;
     color: $color-white;
   }
+
+  &__msg-sent {
+    position: relative;
+    font-size: 2rem;
+    color: rgb(0, 202, 0);
+  }
 }

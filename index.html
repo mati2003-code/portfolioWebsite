@@ -69,9 +69,9 @@
             <div class="container">
                 <div class="row">
                     <img class="column column--sm50 text site-section--img" src="./assets/img/pexels-pavel-danilyuk-5496467.jpg"></img>
-                    <p class="column column--sm50">My name is Mateusz. I am a full-stack developer with one year of experience in programming in technologies that you can easily find below. Programming became my passion since I figured out how enjoyable it is.
+                    <p class="column column--sm50">My name is Mateusz. I am a <strong>full-stack developer</strong> with one year of experience in <strong>programming</strong> in technologies that you can easily find below.<strong> Programming</strong> became my passion since I figured out how enjoyable it is.
                     <span class="site-section--span display-none">
-                        Actually, I started learning programming about one year ago from HTML and CSS, which helped me really quickly jump into studying JavaScript. Being completely honest, it was so difficult at the beginning, but with the time it was getting easier and easier. Finally I fell in love with programming and started creating simple websites for small companies.
+                        Actually, I started learning programming about one year ago from <strong>HTML</strong> and <strong>CSS</strong>, which helped me really quickly jump into studying <strong>JavaScript</strong>. Being completely honest, it was so difficult at the beginning, but with the time it was getting easier and easier. Finally I fell in love with <strong>programming</strong>and started creating simple websites for small companies.
                     </span>    
                     <button class="btn--readmore btn">Read more</button>
                     </p>
@@ -178,13 +178,14 @@
             <div class="container">
                 <div class="row">
                     <form class="column form">
-                        <label class="form__label" for="email">Twój email:</label>
+                        <label class="form__label" for="email">Your email:</label>
                         <input class="form__input" id="topic">
-                        <label class="form__label" for="topic">Temat wiadomości:</label>
+                        <label class="form__label" for="topic">Message subject:</label>
                         <input class="form__input">
-                        <label class="form__label" for="message">Temat wiadomości:</label>
+                        <label class="form__label" for="message">Message content:</label>
                         <textarea class="form__textarea" id="message"></textarea>
                         <input class="form__input form__input--submit" type="submit" value="Submit">
+                        <p class="form__msg-sent msg-sent"></p>
                     </form>
                 </div>
             </div>
@@ -193,12 +194,26 @@
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="column">
+                <div class="column column--sm50 site-footer__brands">
                     <a class="site-footer__brands--el" href=""><i class="fa-brands fa-facebook"></i>Mateusz Dzióbak</a>
-                    <a class="site-footer__brands--el" href=""><i class="fa-brands fa-instagram"></i>mdev_coding</a>
-                    <a class="site-footer__brands--el" href=""><i class="fa-brands fa-linkedin"></i>Mateusz Dzióbak</a>
-                    <a class="site-footer__brands--el" href=""><i class="fa-brands fa-github"></i>mati2003-code</a>
+                    <a class="site-footer__brands--el" href="https://www.instagram.com/mdev_coding/"><i class="fa-brands fa-instagram"></i>mdev_coding</a>
+                    <a class="site-footer__brands--el" href="https://www.linkedin.com/in/mateusz-dzi%C3%B3bak-1abb4a291/"><i class="fa-brands fa-linkedin"></i>Mateusz Dzióbak</a>
+                    <a class="site-footer__brands--el" href="https://github.com/mati2003-code"><i class="fa-brands fa-github"></i>mati2003-code</a>
+                    <a class="site-footer__brands--el" href="mailto: mateuszbiznesaccount@op.pl"><i class="fa-solid fa-envelope"></i>mateuszbiznesaccount@op.pl</a>
+                    <a class="site-footer__brands--el" href="tel: 574661713"><i class="fa-solid fa-phone"></i>+48 574661713</a>
                 </div>
+                <div class="column column--sm50 site-footer__brands">
+                    <a class="site-footer__menu" href="#aboutme">About me</a>
+                    <a class="site-footer__menu" href="#aboutme">Technologies</a>
+                    <a class="site-footer__menu" href="#aboutme">Education</a>
+                    <a class="site-footer__menu" href="#aboutme">Projects</a>
+                    <a class="site-footer__menu" href="#aboutme">Contact</a>
+                </div>
+                <div class="column">
+                    <p class="site-footer--copyright">Copyright © 2024 mdev_coding</p>
+                    <p class="site-footer--design">Design and execution: mdev_coding</p>
+                </div>
+            </div>    
         </div>
     </footer>
 </body>
