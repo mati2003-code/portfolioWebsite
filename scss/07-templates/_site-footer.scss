@@ -1,6 +1,21 @@
 @use '../01-settings/' as *;
 
 .site-footer {
+  position: relative;
   background: black;
   color: $color-white;
+
+  &__brands {
+    display: flex;
+    flex-direction: column;
+
+    &--el {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+  }
+
 }

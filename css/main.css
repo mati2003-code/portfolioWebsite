@@ -472,6 +472,17 @@ p {
   }
 }
 
+.fa-brands {
+  font-size: 3rem;
+  margin-right: 20px;
+  transition: 0.2s ease;
+}
+@media screen and (min-width: 768px) {
+  .fa-brands:hover {
+    transform: scale(1.1);
+  }
+}
+
 .form {
   position: relative;
   display: flex;
@@ -623,8 +634,20 @@ p {
 }
 
 .site-footer {
+  position: relative;
   background: black;
   color: #eff0f3;
+}
+.site-footer__brands {
+  display: flex;
+  flex-direction: column;
+}
+.site-footer__brands--el {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .site-menu {
@@ -637,6 +660,8 @@ p {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.768627451);
   box-shadow: inset 0px 0px 20px 0px #eff0f3;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   transition-duration: 0.5s;
 }
 @media screen and (min-width: 768px) {
