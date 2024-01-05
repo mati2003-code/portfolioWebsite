@@ -423,40 +423,6 @@ p {
   border: 1px solid white;
 }
 
-.image-box {
-  position: relative;
-  height: 160px;
-  max-width: 230px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0.6rem;
-  box-shadow: 0px 0px 15px gray;
-  cursor: pointer;
-}
-@media screen and (min-width: 1240px) {
-  .image-box:hover {
-    animation: scalePicture 0.3s linear forwards;
-    box-shadow: 0 0 25px gray;
-  }
-}
-.image-box__image {
-  height: 100%;
-  width: 100%;
-  display: block;
-  border-top-left-radius: 0.6rem;
-  border-top-right-radius: 0.6rem;
-}
-.image-box__text {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 1.6rem;
-  font-style: italic;
-}
-.image-box__text--text-description {
-  font-size: 2.2rem;
-  font-style: italic;
-}
-
 .project-image-box {
   position: relative;
   height: 350px;
