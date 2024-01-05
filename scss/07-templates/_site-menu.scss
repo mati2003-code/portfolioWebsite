@@ -14,7 +14,7 @@
   box-shadow: inset 0px 0px 20px 0px $color-white;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  transition: height .5s linear; 
+  transition: height .5s ease-in-out; 
 
   @include medium {
     display: none;

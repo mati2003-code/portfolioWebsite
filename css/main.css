@@ -730,7 +730,7 @@ p {
   box-shadow: inset 0px 0px 20px 0px #eff0f3;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  transition: height 0.5s linear;
+  transition: height 0.5s ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .site-menu {
