@@ -1,7 +1,9 @@
+@use '../01-settings/' as *;
 @use '../02-tools/' as *;
 @use '../04-elements/' as*;
 
 .image-box {
+  position: relative;
   height: 160px;
   max-width: 230px;
   margin-left: auto;
@@ -37,5 +39,36 @@
       font-size: 2.2rem;
       font-style: italic;
     }
+  }
+}
+.project-image-box {
+  position: relative;
+  height: 300px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  transition-duration: .5s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+
+  @include small {
+    height: 400px;
+    width: 80%;
+  }
+
+  @include large {
+    height: 600px;
+  }
+  
+  &__image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
   }
 }

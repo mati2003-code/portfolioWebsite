@@ -424,6 +424,7 @@ p {
 }
 
 .image-box {
+  position: relative;
   height: 160px;
   max-width: 230px;
   margin-left: auto;
@@ -454,6 +455,37 @@ p {
 .image-box__text--text-description {
   font-size: 2.2rem;
   font-style: italic;
+}
+
+.project-image-box {
+  position: relative;
+  height: 300px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.project-image-box:hover {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 560px) {
+  .project-image-box {
+    height: 400px;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .project-image-box {
+    height: 600px;
+  }
+}
+.project-image-box__image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .fa-solid, .fa-brands {
@@ -607,11 +639,11 @@ p {
   background: black;
   min-height: 70vh;
 }
-.site-section--contact {
+.site-section__contact {
   background: url(../assets/img/pexels-tima-miroshnichenko-5380792.jpg) center/cover;
 }
 @media screen and (min-width: 1240px) {
-  .site-section--contact {
+  .site-section__contact {
     background-attachment: fixed;
   }
 }
