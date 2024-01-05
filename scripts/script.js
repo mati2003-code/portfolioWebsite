@@ -15,6 +15,21 @@ const inputEmail = document.querySelector('#email');
 const inputSubject = document.querySelector('#subject');
 const inputContent = document.querySelector('#content');
 
+const siteMenuElements = document.querySelectorAll('.site-menu__writing');
+
+const toggleHamburgerMenu = () => {
+  menuElement1.classList.toggle('hideMenuEl1');
+  menuElement2.classList.toggle('transformMenuEl2');
+  menuElement3.classList.toggle('transformMenuEl3');
+}
+
+siteMenuElements.forEach((el) => {
+  el.addEventListener('click', () => {
+    toggleHamburgerMenu();
+    siteMenu.classList.toggle('transform');
+  });
+});
+
 window.addEventListener('DOMContentLoaded', () => {
   window.scrollTo(0, 0);
   h1.classList.add('animation-appear');
@@ -47,10 +62,9 @@ readMoreButton.addEventListener('click', () => {
   readMoreButton.classList.add('display-none');
 });
 
+
 hamburgerButton.addEventListener('click', () => {
-  menuElement1.classList.toggle('hideMenuEl1')
-  menuElement2.classList.toggle('transformMenuEl2')
-  menuElement3.classList.toggle('transformMenuEl3')
+  toggleHamburgerMenu(); 
   siteMenu.classList.toggle('transform');
 });
 

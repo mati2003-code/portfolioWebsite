@@ -459,8 +459,8 @@ p {
 
 .project-image-box {
   position: relative;
-  height: 300px;
-  width: 90%;
+  height: 350px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -469,6 +469,12 @@ p {
 }
 .project-image-box:hover {
   transform: scale(1.05);
+}
+@media screen and (min-width: 360px) {
+  .project-image-box {
+    height: 400px;
+    width: 70%;
+  }
 }
 @media screen and (min-width: 560px) {
   .project-image-box {

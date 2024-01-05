@@ -1,5 +1,11 @@
 @use '../01-settings/' as *;
 
+@mixin x-small {
+  @media screen and (min-width: $bp-x-sm){
+    @content;
+  }
+}
+
 @mixin small {
   @media screen and (min-width: $bp-sm){
     @content;
