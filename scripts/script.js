@@ -15,11 +15,12 @@ const inputEmail = document.querySelector('#email');
 const inputSubject = document.querySelector('#subject');
 const inputContent = document.querySelector('#content');
 
-const scriptURL = 'https://script.google.com/macros/library/d/1nmli7OsbfgkDkq6Xc5SOtf67n25HZKB4nvWT7HousAu3gqL7oUwuZYYl/1'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxeblgKiT7A_Ja4lX2d8G1qSojYXP9qBQx5oEhR16fG_QUf4swGwyLX2WuHpmzdldrQ/exec';
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
-  e.preventDefault()
+  e.preventDefault();
+
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
   .then(response => {
     if (!response.ok) {
@@ -43,7 +44,6 @@ form.addEventListener('submit', e => {
   .catch(error => {
     console.error('Error!', error);
     msgSent.classList.add('color-red');
-    msgSent.innerHTML = 'Field cannot be empty';
     msgSent.innerHTML = `Error: ${error.message}`;
   });
 });
