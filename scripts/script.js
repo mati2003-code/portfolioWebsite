@@ -9,11 +9,44 @@ const h1 = document.querySelector('.heading--h1');
 const readMoreButton = document.querySelector('.btn--readmore');
 const spanElement = document.querySelector('.site-section--span');
 const logo = document.querySelector('.logo');
-const inputSubmit = document.querySelector('.form__input--submit');
+// const inputSubmit = document.querySelector('.form__input--submit');
 const msgSent = document.querySelector('.msg-sent');
 const inputEmail = document.querySelector('#email');
 const inputSubject = document.querySelector('#subject');
 const inputContent = document.querySelector('#content');
+
+const scriptURL = 'https://script.google.com/macros/library/d/1nmli7OsbfgkDkq6Xc5SOtf67n25HZKB4nvWT7HousAu3gqL7oUwuZYYl/1'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`Network response was not ok: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Success!', data);
+    if (data.result === 'error') {
+      throw new Error(`Server error: ${JSON.stringify(data.error)}`);
+    }
+    msgSent.classList.remove('color-red');
+    msgSent.classList.add('color-green');
+    msgSent.innerHTML = 'Message sent successfully';
+    setTimeout(() => {
+      msgSent.innerHTML = '';
+    }, 5000);
+    form.reset();
+  })
+  .catch(error => {
+    console.error('Error!', error);
+    msgSent.classList.add('color-red');
+    msgSent.innerHTML = 'Field cannot be empty';
+    msgSent.innerHTML = `Error: ${error.message}`;
+  });
+});
 
 const siteMenuElements = document.querySelectorAll('.site-menu__writing');
 
@@ -33,23 +66,6 @@ siteMenuElements.forEach((el) => {
 window.addEventListener('DOMContentLoaded', () => {
   window.scrollTo(0, 0);
   h1.classList.add('animation-appear');
-});
-
-inputSubmit.addEventListener('click', (e) => {
-  e.preventDefault();
-  if( inputEmail.value === ''
-    || inputSubject.value === ''
-    || inputContent.value === '') {
-    msgSent.classList.add('color-red');  
-    msgSent.innerHTML = 'Field cannot be empty';
-  } else {
-    msgSent.classList.remove('color-red');  
-    msgSent.classList.add('color-green');  
-    msgSent.innerHTML = 'Message sent successfully';
-    setTimeout(() => {
-      msgSent.innerHTML = '';
-    }, 5000);
-  }
 });
 
 logo.addEventListener('click', () => {
