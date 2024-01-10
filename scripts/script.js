@@ -9,11 +9,18 @@ const h1 = document.querySelector('.heading--h1');
 const readMoreButton = document.querySelector('.btn--readmore');
 const spanElement = document.querySelector('.site-section--span');
 const logo = document.querySelector('.logo');
-// const inputSubmit = document.querySelector('.form__input--submit');
 const msgSent = document.querySelector('.msg-sent');
 const inputEmail = document.querySelector('#email');
 const inputSubject = document.querySelector('#subject');
 const inputContent = document.querySelector('#content');
+
+
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+  history.replaceState({}, document.title, window.location.pathname);
+  h1.classList.add('animation-appear');
+});
+
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxeblgKiT7A_Ja4lX2d8G1qSojYXP9qBQx5oEhR16fG_QUf4swGwyLX2WuHpmzdldrQ/exec';
 const form = document.forms['submit-to-google-sheet']
@@ -31,7 +38,9 @@ form.addEventListener('submit', e => {
   .then(data => {
     console.log('Success!', data);
     if (data.result === 'error') {
-      throw new Error(`Server error: ${JSON.stringify(data.error)}`);
+      const errorMessage = data.error ? JSON.stringify(data.error) : 'Unknown server error';
+      console.error('Server error details:', data.error); // Dodaj tę linię
+      throw new Error(`Server error: ${errorMessage}`);
     }
     msgSent.classList.remove('color-red');
     msgSent.classList.add('color-green');
@@ -42,7 +51,7 @@ form.addEventListener('submit', e => {
     form.reset();
   })
   .catch(error => {
-    console.error('Error!', error);
+    console.error('Error during fetch:', error);
     msgSent.classList.add('color-red');
     msgSent.innerHTML = `Error: ${error.message}`;
   });
@@ -63,10 +72,7 @@ siteMenuElements.forEach((el) => {
   });
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  window.scrollTo(0, 0);
-  h1.classList.add('animation-appear');
-});
+
 
 logo.addEventListener('click', () => {
   location.reload();
