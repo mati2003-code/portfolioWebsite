@@ -14,14 +14,12 @@ const inputEmail = document.querySelector('#email');
 const inputSubject = document.querySelector('#subject');
 const inputContent = document.querySelector('#content');
 
-
 window.addEventListener('load', () => {
   window.scrollTo(0, 0);
-  history.replaceState({}, document.title, window.location.pathname);
+  history.replaceState({}, document.title, window.location.pathname); 
   h1.classList.add('animation-appear');
 });
-
-
+ 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxeblgKiT7A_Ja4lX2d8G1qSojYXP9qBQx5oEhR16fG_QUf4swGwyLX2WuHpmzdldrQ/exec';
 const form = document.forms['submit-to-google-sheet']
 
