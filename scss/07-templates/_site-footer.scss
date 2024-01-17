@@ -24,7 +24,7 @@
       @include medium {
         font-size: 1.8rem;
 
-        &:hover {
+        &:hover, &:active, &:focus {
           transform: scale(1.05);
         }
       }
@@ -54,7 +54,7 @@
         background-color: $color-blue;
         transition: .5s;
       }
-      &:hover {
+      &:hover, &:active, &:focus {
         color: $color-blue;
         &::after {
           transform: scale(1);

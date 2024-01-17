@@ -12,14 +12,14 @@
   transition-duration: .5s;
   cursor: pointer;
 
-  &:hover {
+  &:hover, &:active, &:focus {
     transform: scale(1.05);
   }
 
   @include x-small {
     height: 400px;
     width: 70%;
-  }
+  }     
 
   @include small {
     height: 400px;

@@ -14,11 +14,12 @@
   border-radius: .4rem;
   padding: 1.5rem;
   transition-duration: 0.5s;
+  outline: none;
   cursor: pointer;
 
   @include medium {
 
-    &:hover {
+    &:hover, &:active, &:focus {
       background-color: $color-white;
       color: $color-blue;
       transform: scale(1.05);

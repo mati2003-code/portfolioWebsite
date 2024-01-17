@@ -1,5 +1,29 @@
 'use strict';
 
+import { InfoCookies } from "./modules/InfoCookies.js";
+
+const cookie = new InfoCookies;
+
+const btnCookie = document.querySelector('.cookies__close');
+
+btnCookie.addEventListener('click', e => {
+  
+  e.preventDefault();
+
+  cookie.setCookie();
+});
+
+
+
+
+
+
+
+
+
+
+
+
 const hamburgerButton = document.querySelector('.hamburger-menu');
 const menuElement1 = document.querySelector('.hamburger-menu__element--1');
 const menuElement2 = document.querySelector('.hamburger-menu__element--2');
@@ -10,9 +34,6 @@ const readMoreButton = document.querySelector('.btn--readmore');
 const spanElement = document.querySelector('.site-section--span');
 const logo = document.querySelector('.logo');
 const msgSent = document.querySelector('.msg-sent');
-const inputEmail = document.querySelector('#email');
-const inputSubject = document.querySelector('#subject');
-const inputContent = document.querySelector('#content');
 
 window.addEventListener('load', () => {
   window.scrollTo(0, 0);

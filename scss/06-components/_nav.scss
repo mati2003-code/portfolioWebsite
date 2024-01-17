@@ -53,7 +53,7 @@
       transition: .5s;
 
     }
-    &:hover {
+    &:hover, &:active, &:focus {
       color: $color-blue;
 
       &::after {
