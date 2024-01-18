@@ -23,9 +23,7 @@ export class Cookies {
     }
 
     const cookieName = encodeURIComponent(options.name);
-    
     const cookieValue = encodeURIComponent(options.value);
-    
     const cookieSettingsTab = [];
 
     cookieSettingsTab.push(`${cookieName} = ${cookieValue}`);
@@ -33,11 +31,8 @@ export class Cookies {
     if(typeof options.days === 'number') {
       
         const date = new Date();
-
         date.setTime(date.getTime() + (options.days * 24 * 60 * 60 * 1000));
-
         cookieSettingsTab.push(`expires = ${date.toGMTString()}`);
-
     }
 
     if(options.domain) {
@@ -47,13 +42,12 @@ export class Cookies {
     if(options.path) {
       cookieSettingsTab.push(`path = ${options.path}`);
     }
+
     if(options.secure && typeof options.secure === 'boolean') {
       cookieSettingsTab.push(`secure = ${options.secure}`);
     }
 
     document.cookie = cookieSettingsTab.join(';');
-
-    console.log(cookieSettingsTab);
   }
 
   getCookie(name) {
@@ -79,7 +73,5 @@ export class Cookies {
       name: nameCookie,
       days: -1
     });
-    
   }
-
 }

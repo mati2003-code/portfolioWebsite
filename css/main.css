@@ -537,6 +537,7 @@ p {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.482);
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   box-shadow: 0px 0px 5px 0px #eff0f3;
   z-index: 2;
 }
