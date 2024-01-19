@@ -5,6 +5,7 @@ import { PageMenager } from "./modules/PageMenager.js";
 
 const cookie = new InfoCookies();
 const pageManager = new PageMenager();
+
 const btnCookie = document.querySelector('.cookies__close');
 const logo = document.querySelector('.logo');
 const hamburgerButton = document.querySelector('.hamburger-menu');

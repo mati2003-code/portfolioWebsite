@@ -1,6 +1,8 @@
 @use '../01-settings/' as *;
 
 .logo {
+  padding: .4rem;
+  margin: .8rem;
   color: $color-white;
   font-size: 2.5rem;
   letter-spacing: 4px;
@@ -13,6 +15,5 @@
 
   &::first-letter {
     color: $color-blue;
-
   }
 }
