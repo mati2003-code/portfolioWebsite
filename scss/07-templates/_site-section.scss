@@ -33,9 +33,38 @@
 
   &__contact {
     background: url(../assets/img/pexels-tima-miroshnichenko-5380792.jpg) center/cover;
-
+  
     @include large {
       background-attachment: fixed;
+    }
+  }
+
+  &__brands {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include small {
+      flex-direction: column;
+    }
+
+    &--el {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: $color-white;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0px 0px 5px 0px $color-white;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: .2s ease;
+
+        &:hover, &:active, &:focus {
+          transform: scale(1.05);
+        }
     }
   }
 }

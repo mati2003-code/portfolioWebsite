@@ -171,16 +171,21 @@
             <h2 class="heading--h2">Contact</h2>
             <div class="container">
                 <div class="row">
-                    <form class="column form" name="submit-to-google-sheet" autocomplete="off">
-                        <label class="form__label" for="email">Your email:</label>
-                        <input class="form__input" type="email" id="email" name="email" required>
-                        <label class="form__label" for="subject">Message subject:</label>
-                        <input class="form__input" id="subject" name="subject" required>
-                        <label class="form__label" for="content">Message content:</label>
-                        <textarea class="form__textarea" id="content" name="content" required></textarea>
+                    <form class="column column--sm50 form" name="submit-to-google-sheet" autocomplete="off">
+                        <input class="form__input" type="email" id="email" name="email" placeholder="Type your email adress.." required>
+                        <input class="form__input" id="subject" name="subject" placeholder="Message subject.." required>
+                        <textarea class="form__textarea" id="content" name="content" placeholder="Message content.." required></textarea>
                         <input class="form__input form__input--submit" type="submit" value="Submit" >
                         <span class="form__msg-sent msg-sent"></span>
                     </form>
+                    <div class="column column--sm50 site-section__brands">
+                        <a class="site-section__brands--el" href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a class="site-section__brands--el" href="https://www.instagram.com/mdev_coding/"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="site-section__brands--el" href="https://www.linkedin.com/in/mateusz-dzi%C3%B3bak-1abb4a291/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="site-section__brands--el" href="https://github.com/mati2003-code"><i class="fa-brands fa-github"></i></a>
+                        <a class="site-section__brands--el" href="mailto: mateuszbiznesaccount@op.pl"><i class="fa-solid fa-envelope"></i></a>
+                        <a class="site-section__brands--el" href="tel: 574661713"><i class="fa-solid fa-phone"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
