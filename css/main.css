@@ -725,11 +725,18 @@ p {
   align-items: center;
   position: relative;
   color: #eff0f3;
+  margin-bottom: 15px;
+  margin-right: 5px;
   padding: 10px;
   box-shadow: 0px 0px 5px 0px #eff0f3;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: 0.2s ease;
+}
+@media screen and (min-width: 768px) {
+  .site-section__brands--el {
+    margin-bottom: 20px;
+  }
 }
 .site-section__brands--el:hover, .site-section__brands--el:active, .site-section__brands--el:focus {
   transform: scale(1.05);
